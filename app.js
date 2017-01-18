@@ -108,7 +108,9 @@ function mySubmitFunction(evt) {
 }
 
 $(document).ready(function() {
+  $(document).on("submit", '#citySearch', function(event){
     LoadAdditionalData();
+    event.preventDefault();
 });
 
 
