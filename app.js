@@ -14,7 +14,7 @@ function AdditionalData_Loaded(data)
   var selectCities= [];
 
   //for each row in the table add the cell contents
-  for (var i=1; i < data.d.length; i++)
+  for (var i=0; i < data.d.length; i++)
   {
       var li=document.createElement('LI');
       var citiesClass = AddDataContents(data.d, i,'ville');
@@ -48,7 +48,7 @@ let singleCities = selectCities[j];
 }*/
 
   $( "#gardensList" ).on( "click", "li", function() {
-    let index = $(this).index();
+    let index = $(this).index()-1;
     $(coord).html("Coordonnées");
     $(name).html(AddCellContents(data.d, index,'raisonsociale'));
     $(sstype).html(AddCellContents(data.d, index,'soustype'));
