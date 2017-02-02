@@ -117,7 +117,7 @@ $(document).ready(function() {
 function LoadAdditionalData()
 {
     //create the queryUrl to be used in the service call
-    var query = "https://eukavlin.github.io/opendata-parcsjardins/data.json";
+    var query = "https://valdiss.github.io/jsonP-J/ParcsEtJardins.json";
     var filter = "";
     var queryUrl = query + filter;
     //make jquery call to service
